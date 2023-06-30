@@ -24,6 +24,7 @@ if (string.IsNullOrWhiteSpace(username) ||
     string.IsNullOrWhiteSpace(hostname))
 {
 
+    Log.Error($"{nameof(username)} and ${nameof(password)} and ${nameof(hostname)} can't be null or empty or whitespace");
     throw new Exception($"{nameof(username)} and ${nameof(password)} and ${nameof(hostname)} can't be null or empty or whitespace");
 }
 
