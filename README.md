@@ -6,7 +6,7 @@
 ## docker
 
 ```bash
-docker run --name noip-duc -e NOIP_USERNAME='' -e NOIP_PASSWORD='' -e NOIP_HOSTNAME='' -e DELAY_MIN='5' -v /host/path:/app/data arisuokay/noip-duc:latest
+docker run --name noip-duc -e NOIP_USERNAME='' -e NOIP_PASSWORD='' -e NOIP_HOSTNAME='' -e DELAY_MIN='5' -v ./data/noip-duc:/app/data arisuokay/noip-duc:latest
 ```
 
 ## docker compose
@@ -24,7 +24,7 @@ services:
       - NOIP_HOSTNAME=
       - DELAY_MIN=5
     volumes:
-      - /host/path:/app/data
+      - ./data/noip-duc:/app/data
 ```
 
 ## build 指令
