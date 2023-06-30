@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "noip-duc": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}
