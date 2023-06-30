@@ -32,10 +32,10 @@ services:
 ```ps1
 docker build -t arisuokay/noip-duc .
 # 需要變更版本
-docker tag arisuokay/noip-duc:latest arisuokay/noip-duc:v1.1
+docker tag arisuokay/noip-duc:latest arisuokay/noip-duc:v1.2
 
 docker push arisuokay/noip-duc:latest
 # 需要變更版本
-docker push arisuokay/noip-duc:v1.1
-pause
+docker push arisuokay/noip-duc:v1.2
+
 ```

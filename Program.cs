@@ -1,6 +1,6 @@
 ﻿using Serilog;
 
-var log = new LoggerConfiguration()
+Log.Logger = new LoggerConfiguration()
     .WriteTo.File(@"./data/duc-.log", rollingInterval: RollingInterval.Day, shared: true)
     .WriteTo.Console()
     .CreateLogger();
@@ -48,12 +48,12 @@ while (true)
     // 檢查回應狀態碼
     if (response.IsSuccessStatusCode)
     {
-        log.Information("IP address updated successfully.");
+        Log.Information("IP address updated successfully.");
     }
     else
     {
         var content = await response.Content.ReadAsStringAsync();
-        log.Warning("Failed to update IP address. {content}", content);
+        Log.Warning("Failed to update IP address. {content}", content);
     }
 
     await Task.Delay(TimeSpan.FromMinutes(delayMin));
