@@ -6,7 +6,7 @@
 ## docker
 
 ```bash
-docker run --name noip-duc -e NOIP_USERNAME='' -e NOIP_PASSWORD='' -e NOIP_HOSTNAME='' -e DELAY_MIN='5' -v ./data/noip-duc:/app/data arisuokay/noip-duc:latest
+docker run --name noip-duc -e NOIP_USERNAME='' -e NOIP_PASSWORD='' -e NOIP_HOSTNAME='' -e DELAY_MIN='5' -v /host/dir:/app/data arisuokay/noip-duc:latest
 ```
 
 ## docker compose
